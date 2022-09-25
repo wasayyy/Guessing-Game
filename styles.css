@@ -1,0 +1,98 @@
+html {
+  font-family: "Roboto Mono", monospace;
+  font-size: 10px;
+  font-weight: 300;
+}
+body {
+  width: 90vw;
+  margin: 0 auto;
+  background: radial-gradient(#343e63, #2a3352);
+}
+main {
+  background: #f8f1e9;
+  text-align: center;
+  border: solid #ef7b54;
+  border-width: 0px 8px 8px 8px;
+  border-radius: 0rem 0rem 2rem 2rem;
+  min-height: 80vh;
+  padding: 1rem;
+  /* color: #1f2933; */
+}
+h2 {
+  font-size: 2.2rem;
+}
+p {
+  font-size: 1.8rem;
+}
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  border: none;
+  padding: 2rem;
+  cursor: pointer;
+  background: #83e1d0;
+  border-radius: 1rem 1rem 0 0;
+  margin: 0 3rem;
+}
+button:last-child {
+  border-radius: 0 0 1rem 1rem;
+  background: #ef7b54;
+}
+h3 {
+  font-size: 2rem;
+}
+input {
+  border: 1px solid lightgrey;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  text-align: center;
+  width: 15rem;
+  background: transparent;
+}
+#range {
+  display: flex;
+  background: #83e1d0;
+  height: 4rem;
+  padding: 0 0;
+  margin: 0rem 3rem 4rem 3rem;
+}
+#rangeOutput {
+  font-size: 1.6rem;
+}
+.stats {
+  text-align: left;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.info span {
+  font-size: 1.6rem;
+}
+
+#newGameButton {
+  border-radius: 1rem;
+}
+@media (min-width: 800px) {
+  body {
+    width: 60vw;
+  }
+}
+.flash {
+  animation: flash 1s infinte;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
